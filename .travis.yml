@@ -1,10 +1,8 @@
 language: node_js
-
-
+node_js:
+  - 13
 services:
   - docker
-
-
 script:
   - docker --version # print the version for logging
   - docker build -t udagram-api-feed ./udagram-api-feed
